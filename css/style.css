@@ -1,0 +1,470 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Patua One', cursive;
+  color: black; }
+
+.color-footer-1 {
+  background-color: #f8f9fa; }
+
+.color-footer-2 {
+  background-color: #0000000d; }
+
+nav {
+  background-color: #1C658C; }
+  nav a img {
+    height: 45px;
+    float: left;
+    margin-top: 5px; }
+  nav a h1 {
+    font-size: 30px;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    margin-top: 10px; }
+  nav ul li a {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 20px; }
+
+.grid-layout-index {
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-areas: "presentacion" "servicios" "imp-3d" "dis-3d" "contacto"; }
+
+.fotos-index {
+  grid-area: presentacion; }
+
+.carrusel {
+  width: 100%;
+  height: 100vh; }
+
+.carrusel-1 {
+  background-image: url(../img/fondo-index.png);
+  background-size: cover;
+  background-position: center; }
+
+.carrusel-2 {
+  background-image: url(../img/fondo-index-2.png);
+  background-size: cover;
+  background-position: center; }
+
+.carrusel-3 {
+  background-image: url(../img/fondo-index-3.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  margin: 0 10px; }
+  .carousel-caption h3 {
+    color: white;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif; }
+  .carousel-caption p {
+    color: white;
+    font-size: 18px; }
+
+.servicios-index {
+  grid-area: servicios;
+  text-align: center;
+  background-color: #D8D2CB;
+  padding: 15px 0; }
+
+.serv, .serv-imp-3d, .serv-dis-3d {
+  margin: 40px auto;
+  box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  height: auto;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center; }
+  .serv img, .serv-imp-3d img, .serv-dis-3d img {
+    width: 75%;
+    margin-top: 30px; }
+  .serv h3, .serv-imp-3d h3, .serv-dis-3d h3 {
+    margin: 15px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px; }
+  .serv p, .serv-imp-3d p, .serv-dis-3d p {
+    margin: 0 15px 20px; }
+  .serv a, .serv-imp-3d a, .serv-dis-3d a {
+    background-color: #398AB9;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white; }
+
+.serv-imp-3d {
+  grid-area: imp-3d; }
+
+.serv-dis-3d {
+  grid-area: dis-3d; }
+
+.contacto-index {
+  grid-area: contacto;
+  background-color: #46a2d8;
+  text-align: center;
+  padding: 30px;
+  height: auto; }
+  .contacto-index h3 {
+    font-size: 25px;
+    margin-bottom: 30px; }
+  .contacto-index a {
+    background-color: #1C658C;
+    padding: 20px;
+    color: white;
+    border-radius: 5px;
+    font-size: 30px; }
+
+.presentacion-trabajos {
+  height: 100vh;
+  background-image: url(../img/fondo-trabajos.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .presentacion-trabajos div {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: auto;
+    width: 70%;
+    max-width: 500px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; }
+    .presentacion-trabajos div h2 {
+      color: white;
+      font-family: 'Bebas Neue', cursive;
+      letter-spacing: 1px;
+      font-size: 30px;
+      line-height: 40px;
+      margin: 40px 15px 20px; }
+    .presentacion-trabajos div p {
+      color: white;
+      font-family: 'Oswald', sans-serif;
+      font-size: 20px;
+      line-height: 25px;
+      margin: 0 15px 40px; }
+
+.subtitulo-trabajos {
+  text-align: center;
+  background-color: #D8D2CB;
+  padding: 15px 0;
+  margin-bottom: 40px; }
+
+.tipos-de-trabajos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.tipos-de-trabajos div {
+  background: #1C658C linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  width: 80%;
+  max-width: 500px;
+  height: 75px;
+  line-height: 75px;
+  margin-bottom: 40px;
+  padding-left: 15px;
+  display: flex;
+  align-items: center; }
+
+.tipos-de-trabajos div h3 {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  pointer-events: none; }
+
+.presentacion-impresion-3d {
+  height: 100vh;
+  background-image: url(../img/fondo-impresion.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .presentacion-impresion-3d div {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: auto;
+    width: 70%;
+    max-width: 500px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; }
+    .presentacion-impresion-3d div h2 {
+      color: white;
+      font-family: 'Bebas Neue', cursive;
+      letter-spacing: 1px;
+      font-size: 30px;
+      line-height: 40px;
+      margin: 40px 15px 20px; }
+    .presentacion-impresion-3d div p {
+      color: white;
+      font-family: 'Oswald', sans-serif;
+      font-size: 20px;
+      line-height: 25px;
+      margin: 0 15px 40px; }
+
+.subtitulo-impresion-3d {
+  text-align: center;
+  background-color: #D8D2CB;
+  padding: 15px 0;
+  margin-bottom: 40px; }
+  .subtitulo-impresion-3d h2 {
+    font-size: 30px;
+    margin-bottom: 10px; }
+  .subtitulo-impresion-3d p {
+    font-size: 20px;
+    margin: 0 15px 10px; }
+
+.como-funciona {
+  display: grid;
+  grid-template-areas: "sub-titulo" "texto";
+  text-align: justify;
+  margin-bottom: 20px; }
+  .como-funciona img {
+    display: none; }
+  .como-funciona h3 {
+    text-align: center;
+    padding: 15px 0;
+    margin-bottom: 10px;
+    font-size: 30px; }
+  .como-funciona p {
+    margin: 5px 20px;
+    font-size: 18px; }
+
+.presentacion-diseño-3d {
+  height: 100vh;
+  background-image: url(../img/fondo-diseno.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .presentacion-diseño-3d div {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: auto;
+    width: 70%;
+    max-width: 500px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; }
+    .presentacion-diseño-3d div h2 {
+      color: white;
+      font-family: 'Bebas Neue', cursive;
+      letter-spacing: 1px;
+      font-size: 30px;
+      line-height: 40px;
+      margin: 40px 15px 20px; }
+    .presentacion-diseño-3d div p {
+      color: white;
+      font-family: 'Oswald', sans-serif;
+      font-size: 20px;
+      line-height: 25px;
+      margin: 0 15px 40px; }
+
+.informacion-diseño-3d {
+  display: grid;
+  grid-template-areas: "sub-titulo" "texto";
+  text-align: justify;
+  margin-bottom: 20px; }
+  .informacion-diseño-3d img {
+    display: none; }
+  .informacion-diseño-3d h3 {
+    text-align: center;
+    background-color: #D8D2CB;
+    padding: 15px 0;
+    margin-bottom: 10px; }
+  .informacion-diseño-3d p {
+    margin: 5px 20px;
+    font-size: 18px; }
+
+.presentacion-contacto {
+  height: 100vh;
+  background-image: url(../img/fondo-diseno.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .presentacion-contacto div {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: auto;
+    width: 70%;
+    max-width: 500px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; }
+    .presentacion-contacto div h2 {
+      color: white;
+      font-family: 'Bebas Neue', cursive;
+      letter-spacing: 1px;
+      font-size: 30px;
+      line-height: 40px;
+      margin: 40px 15px 40px; }
+
+.contenedor-principal-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f1f1f1; }
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column; }
+  .formulario-contacto h3 {
+    padding: 10px 20px;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif; }
+  .formulario-contacto label {
+    position: relative;
+    left: 25px;
+    font-size: 18px;
+    width: 300px;
+    top: 0px; }
+  .formulario-contacto input {
+    height: 50px;
+    background-color: #8f8f8f;
+    color: white;
+    border: 0px;
+    margin: 5px 25px;
+    width: 80%;
+    max-width: 400px;
+    padding: 25px;
+    font-size: 20px; }
+  .formulario-contacto ::-webkit-input-placeholder {
+    color: #444444; }
+  .formulario-contacto div {
+    position: relative; }
+
+.contenedor-boton-contacto input {
+  background-color: #33ccff;
+  border-radius: 5px;
+  width: 200px;
+  height: 70px; }
+
+.nuestros-datos {
+  margin-bottom: 20px; }
+  .nuestros-datos h3 {
+    padding: 10px 0px;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 10px; }
+  .nuestros-datos p {
+    font-size: 18px;
+    margin-bottom: 30px; }
+    .nuestros-datos p span {
+      font-weight: bold; }
+
+/* footer */
+footer a i {
+  font-size: 35px;
+  color: black;
+  padding-left: 10px; }
+
+.serv-dis-3d:hover {
+  animation: sombra-zoom 0.4s forwards; }
+
+.serv-imp-3d:hover {
+  animation: sombra-zoom 0.4s forwards; }
+
+.tipos-de-trabajos div:hover {
+  animation: sombra-zoom 0.4s forwards; }
+
+@keyframes sombra-zoom {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); }
+  100% {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.5); } }
+
+@media screen and (min-width: 1024px) {
+  .boton-menu {
+    display: none; }
+  nav ul {
+    position: relative;
+    width: auto;
+    height: auto;
+    top: 0px;
+    right: 0;
+    float: right;
+    margin-right: 20px;
+    animation: 0s; }
+    nav ul li:hover {
+      text-decoration: underline; }
+  .grid-layout-index {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "presentacion presentacion" "servicios servicios" "imp-3d dis-3d" "contacto contacto"; }
+  .presentacion-index div h2 {
+    font-size: 45px; }
+  .presentacion-trabajos div h2 {
+    font-size: 45px; }
+  .presentacion-impresion-3d div h2 {
+    font-size: 45px; }
+  .presentacion-diseño-3d div h2 {
+    font-size: 45px; }
+  .como-funciona {
+    display: grid;
+    grid-template-areas: "sub-titulo foto" "texto foto";
+    text-align: justify;
+    margin-bottom: 20px; }
+    .como-funciona img {
+      grid-area: foto;
+      display: inline;
+      width: 100%;
+      float: right; }
+    .como-funciona h3 {
+      grid-area: sub-titulo;
+      text-align: center;
+      background-color: white;
+      padding: 70px 0 10px;
+      font-size: 25px; }
+    .como-funciona p {
+      grid-area: texto;
+      margin: 5px 20px;
+      font-size: 18px; }
+  .informacion-diseño-3d {
+    display: grid;
+    grid-template-areas: "foto sub-titulo" "foto texto";
+    text-align: justify;
+    margin-bottom: 20px; }
+    .informacion-diseño-3d img {
+      grid-area: foto;
+      display: inline; }
+    .informacion-diseño-3d h3 {
+      grid-area: sub-titulo;
+      text-align: center;
+      background-color: white;
+      padding: 70px 0 10px;
+      font-size: 25px; }
+    .informacion-diseño-3d p {
+      grid-area: texto;
+      margin: 5px 20px;
+      font-size: 18px; }
+  .contenedor-principal-contacto {
+    flex-direction: row; } }

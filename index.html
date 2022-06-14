@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link a bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    <!-- link a css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- link a google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500;700&family=Patua+One&display=swap"
+        rel="stylesheet">
+
+    <!-- link a font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- etiquetas seo -->
+    <link rel="icon" href="img/logo-1.png">
+    <meta name="keywords" content="impresión, diseño, 3d, print, it, impresora, inicio">
+    <meta name="description"
+        content="somos Print It 3D, un emprendimiento familiar que busca materializar todos tus proyectos">
+    <title>Print It 3D||inicio</title>
+</head>
+
+<body>
+
+    <!-- nav -->
+    <nav class="navbar navbar-expand-md navbar-dark  nav-grid">
+        <div class="container-fluid">
+
+            <!-- logo y nombre -->
+            <a class="navbar-brand nav-item" href="index.html">
+                <img class="logo" src="img/logo-2.png" alt="logo-print-it-3D">
+                <h1 class="PrintIt">Print it 3D</h1>
+            </a>
+
+            <!-- botón responsive -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarNavDropdown">
+
+                <!-- items -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/trabajos.html">Trabajos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="pages/impresion-3d.html">Impresión 3D</a></li>
+                            <li><a class="dropdown-item" href="pages/diseño-3d.html">Diseño 3D</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main -->
+    <main class="grid-layout-index">
+
+        <!-- presentación -->
+        <div id="carouselExampleCaptions" class="carousel slide fotos-index" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-block carrusel carrusel-1"></div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Imprimimos todas tus ideas en 3D</h3>
+                        <p>Vos lo pensas, print it lo materializa</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-block carrusel carrusel-2"></div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Ultima tecnología en impresión FDM</h3>
+                        <p>contamos con la ultima tecnología en impresión FDM para poder brindar el mejor servicio</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-block carrusel carrusel-3"></div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Diseño personalizado 3D</h3>
+                        <p>Diseñamos tus ideas para poder materializarlas</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+        <!-- servicios -->
+        <section class="servicios-index">
+            <h2>SERVICIOS</h2>
+            <p>La solución justa para tu necesidad</p>
+        </section>
+        <section class="serv serv-imp-3d">
+            <img src="img/icono-impresion-3d.png" alt="impresión-3D">
+            <h3>Impresión 3D</h3>
+            <p>La impresión 3D es una nueva forma de manufactura que expande los límites de la producción de piezas
+            </p>
+            <a href="pages/impresion-3d.html">Ver mas</a>
+        </section>
+        <section class="serv serv-dis-3d">
+            <img src="img/icono-diseno-3d.png" alt="Diseño-3D">
+            <h3>Diseño 3D</h3>
+            <p>El diseño 3D es nuestra herramienta para transformar tus ideas, y convertirlas en ese objeto que
+                buscas</p>
+            <a href="pages/diseño-3d.html">Ver mas</a>
+        </section>
+
+        <!-- comenzar proyecto -->
+        <section class="contacto-index">
+            <h3>No pierdas tiempo, envíanos tu proyecto y recibí tu presupuesto al instante</h3>
+            <a href="pages/contacto.html">CONTACTANOS</a>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="text-center text-lg-start text-muted color-footer-1">
+        <section class="d-flex justify-content-center p-4 border-bottom">
+            <divS class="me-5 d-none d-lg-block">
+                <span>Nuestras redes sociales:</span>
+                </a>
+                <a href="https://www.instagram.com/print_it_all_3d" target="_blank" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                </div>
+        </section>
+        <div class="text-center p-4 color-footer-2">
+            <p class="d-inline">© 2022 Copyright:</p>
+            <a class="text-reset fw-bold" href="#">Printit3D.com</a>
+        </div>
+    </footer>
+</body>
+
+</html>

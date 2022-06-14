@@ -1,0 +1,28 @@
+$sombra1: rgba(0, 0, 0, 0.7);
+$sombra2: rgba(0, 0, 0, 0.1);
+$sombra3: rgba(0, 0, 0, 0);
+$sombra4: rgba(0, 0, 0, 0.5);
+$color1: #D8D2CB;
+$color2: #398AB9;
+$color3: #46a2d8;
+$color4: #1C658C;
+$color5: #f1f1f1;
+$color6: #8f8f8f;
+$color7: #33ccff;
+
+$colores-footer: (
+    1: #f8f9fa,
+    2: #0000000d,
+);
+
+@each $n, $color in $colores-footer {
+    .color-footer-#{$n} {
+        background-color: $color;
+    }
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,111 @@
+@media screen and (min-width: 1024px){
+    .boton-menu {
+        display: none;
+    }
+    
+    nav ul {
+        position: relative;
+        width: auto;
+        height: auto;
+        top: 0px;
+        right: 0;
+        float: right;
+        margin-right: 20px;
+        animation: 0s;
+
+        li:hover {
+            text-decoration: underline;
+            
+        }
+    }
+
+
+    .grid-layout-index {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+            "presentacion presentacion"
+            "servicios servicios"
+            "imp-3d dis-3d"
+            "contacto contacto";
+    }
+
+    .presentacion-index div h2 {
+        font-size: 45px;
+    }
+    
+    .presentacion-trabajos div h2 {
+        font-size: 45px;
+    }
+
+    .presentacion-impresion-3d div h2 {
+        font-size: 45px;
+    }
+
+    .presentacion-diseño-3d div h2 {
+        font-size: 45px;
+    }
+
+    .como-funciona {
+        display: grid;
+        grid-template-areas: 
+        "sub-titulo foto"
+        "texto foto"; 
+        text-align: justify;
+        margin-bottom: 20px;
+
+        img {
+            grid-area: foto;
+            display: inline;
+            width: 100%;
+            float: right;
+        }
+
+        h3 {
+            grid-area: sub-titulo;
+            text-align: center;
+            background-color: white;
+            padding: 70px 0 10px;
+            font-size: 25px;
+        }
+
+        p {
+            grid-area: texto;
+            margin: 5px 20px;
+            font-size: 18px;
+        }
+    }
+
+    .informacion-diseño-3d {
+        display: grid;
+        grid-template-areas: 
+        "foto sub-titulo"
+        "foto texto"; 
+        text-align: justify;
+        margin-bottom: 20px;
+
+        img {
+            grid-area: foto;
+            display: inline;
+        }
+
+        h3 {
+            grid-area: sub-titulo;
+            text-align: center;
+            background-color: white;
+            padding: 70px 0 10px;
+            font-size: 25px;
+        }
+
+        p {
+            grid-area: texto;
+            margin: 5px 20px;
+            font-size: 18px;
+        }
+    }
+
+    .contenedor-principal-contacto {
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,26 @@
+// diseno-3d
+.serv-dis-3d:hover {
+	animation: sombra-zoom 0.4s forwards;
+}
+
+// impresion-3d
+.serv-imp-3d:hover {
+	animation: sombra-zoom 0.4s forwards;
+}
+
+//trabajos
+.tipos-de-trabajos div:hover {
+	animation: sombra-zoom 0.4s forwards;
+}
+
+//keyframes
+@keyframes sombra-zoom {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 $sombra3;
+        }
+        100% {
+        transform: scale(1.05);
+        box-shadow: 0 0 30px 0px $sombra4;
+    }
+    }

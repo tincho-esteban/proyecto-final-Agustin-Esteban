@@ -1,0 +1,30 @@
+nav {
+    background-color: $color4;
+
+    a {
+
+        img {
+            height: 45px;
+            float: left;
+            margin-top: 5px;
+        }
+
+        h1 {
+            font-size: 30px;
+            color: white;
+            font-family: 'Bebas Neue', cursive;
+            letter-spacing: 1px;
+            margin-top: 10px;
+        }
+    }
+    
+    ul {
+        li {
+            a {
+                font-family: 'Oswald', sans-serif;
+                color: white;
+                font-size: 20px;
+            }
+        }
+    }
+}

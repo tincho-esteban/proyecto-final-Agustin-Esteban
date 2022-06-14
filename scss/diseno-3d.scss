@@ -1,0 +1,64 @@
+//presentacion
+.presentacion-diseño-3d {
+    height: 100vh;
+    background-image: url(../img/fondo-diseno.jpg);
+    background-size: cover;
+    background-position: center;
+    @include flex-center;
+
+    div {
+        background-color: $sombra1;
+        height: auto;
+        width: 70%;
+        max-width: 500px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        h2 {
+            color: white;
+            font-family: 'Bebas Neue', cursive;
+            letter-spacing: 1px;
+            font-size: 30px;
+            line-height: 40px;
+            margin: 40px 15px 20px;
+        }
+
+        p {
+            color: white;
+            font-family: 'Oswald', sans-serif;
+            font-size: 20px;
+            line-height: 25px;
+            margin: 0 15px 40px;
+        }
+    }
+}
+
+//informacion
+.informacion-diseño-3d {
+    display: grid;
+    grid-template-areas:
+        "sub-titulo"
+        "texto";
+    text-align: justify;
+    margin-bottom: 20px;
+
+    img {
+        display: none;
+    }
+
+    h3 {
+        text-align: center;
+        background-color: $color1;
+        padding: 15px 0;
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin: 5px 20px;
+        font-size: 18px;
+    }
+}

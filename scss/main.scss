@@ -1,0 +1,22 @@
+//aplica a todos los html
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Patua One', cursive;
+    color: black;
+}
+
+//imports
+@import "variables";
+@import "nav";
+@import "index";
+@import "trabajos";
+@import "impresion-3d";
+@import "diseno-3d";
+@import "contacto";
+@import "footer";
+@import "animaciones";
+@import "media-queries";
